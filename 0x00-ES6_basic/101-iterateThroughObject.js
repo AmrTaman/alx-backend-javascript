@@ -4,5 +4,5 @@ export default function iterateThroughObject(reportWithIterator) {
   for (const employee of reportWithIterator) {
     formated += `| ${employee} `;
   }
-  return formated;
+  return formated.slice(0, -1);
 }
